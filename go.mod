@@ -2,7 +2,7 @@ module github.com/prometheus/node_exporter
 
 go 1.23.0
 
-toolchain go1.23.12
+toolchain go1.24.9
 
 require (
 	github.com/alecthomas/kingpin/v2 v2.4.0

@@ -73,6 +73,7 @@ func newHandler(includeExporterMetrics bool, maxRequests int, logger *slog.Logge
 		h.unfilteredHandler = innerHandler
 	}
 	return h
+	// return h
 }
 
 // ServeHTTP implements http.Handler.

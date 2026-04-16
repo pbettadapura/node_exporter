@@ -2,6 +2,9 @@ name: PR test (build + docker run)
 
 on:
   pull_request:
+  push:
+    branches:
+      - auto/update-go-toolchain
 
 jobs:
   smoke:

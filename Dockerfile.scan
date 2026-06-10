@@ -1,0 +1,6 @@
+FROM golang:1.25-bookworm AS build
+WORKDIR /src
+COPY . /src
+RUN go build -o node_exporter .
+FROM debian:bookworm-slim
+COPY --from=build /src/node_exporter /bin/node_exporter

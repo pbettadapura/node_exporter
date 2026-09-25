@@ -17,6 +17,8 @@ all::
 # Needs to be defined before including Makefile.common to auto-generate targets
 DOCKER_ARCHS ?= amd64 armv7 arm64 ppc64le s390x
 
+GOLANGCI_LINT_VERSION ?= v2.9.0
+
 include Makefile.common
 
 PROMTOOL_VERSION ?= 2.30.0
